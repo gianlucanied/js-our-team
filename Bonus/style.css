@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+div {
+    margin: 0 20%;
+}
+
+.card {
+    width: 15%;
+    background-color: white;
+}
+
+img {
+    width: 100%;
+}
+
+.section-card {
+    display: flex;
+}
+
+body {
+    background-color: rgba(128, 128, 128, 0.179);
+}
