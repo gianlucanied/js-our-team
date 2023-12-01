@@ -44,7 +44,7 @@ const arrayMembriTeam = [
 ];
 
 
-// Milestone 1
+// Milestone 1 e 2
 for(let i = 0; i < arrayMembriTeam.length; i++){
 
     let membroIesimo = arrayMembriTeam[i];
@@ -52,8 +52,21 @@ for(let i = 0; i < arrayMembriTeam.length; i++){
     let nomeECognomeMembroIesimo = membroIesimo.nomeCognome;
 
     let roleMembroIesimo = membroIesimo.role;
-    
+
     let imgMembroIesimo = membroIesimo.image;
+
+    // Creo un div per contenere i dati
+    let divMembro = document.createElement("div");
+
+     // Creo le stringhe
+     let stringaHtml = "<p>Nome e Cognome: " + nomeECognomeMembroIesimo + "</p>" +
+     "<p>Ruolo: " + roleMembroIesimo + "</p>" +
+     '<p>Img: ' + imgMembroIesimo + "</p>";
+
+    divMembro.innerHTML = stringaHtml;
+
+    // Uso append per collegarlo al body
+    document.body.appendChild(divMembro);
 
     console.log("Nome e Cognome: " + nomeECognomeMembroIesimo, "Ruolo: " + roleMembroIesimo, "Img: " + imgMembroIesimo);
 }
