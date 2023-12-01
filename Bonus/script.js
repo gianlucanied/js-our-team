@@ -55,8 +55,6 @@ for(let i = 0; i < arrayMembriTeam.length; i++){
 
     let imgMembroIesimo = membroIesimo.image;
 
-    let divSezione = document.createElement("div");
-
     // Creo un div per contenere i dati
     let divMembro = document.createElement("div");
 
@@ -70,8 +68,10 @@ for(let i = 0; i < arrayMembriTeam.length; i++){
     // Aggiungo una classe al div creato
     divMembro.classList.add("card");
 
+    const sezioneCard = document.getElementById("section-card");
+
     // Uso append per collegarlo al body
-    document.body.appendChild(divMembro);
+    sezioneCard.appendChild(divMembro);
 
     console.log("Nome e Cognome: " + nomeECognomeMembroIesimo, "Ruolo: " + roleMembroIesimo, "Img: " + imgMembroIesimo);
 }

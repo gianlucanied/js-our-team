@@ -6,20 +6,25 @@
 }
 
 div {
-    margin: 0 20%;
+
 }
 
 .card {
-    width: 15%;
+    width: 30%;
     background-color: white;
+    margin: 3% 1% 2% 2%;
+    border-radius: 3%;
+    box-shadow: 2px 5px #8888;
 }
 
 img {
     width: 100%;
 }
 
-.section-card {
+#section-card {
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 20%;
 }
 
 body {
