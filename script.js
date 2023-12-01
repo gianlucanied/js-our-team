@@ -9,6 +9,7 @@ Stampare le stesse informazioni su DOM sotto forma di stringhe */
 
 // Milestone 0
 
+// Creiamo un array con dentro tutti i membri
 const arrayMembriTeam = [
     {
         "nomeCognome": "Wayne Barnett",
@@ -42,4 +43,18 @@ const arrayMembriTeam = [
     }
 ];
 
-console.log(arrayMembriTeam);
+
+// Milestone 1
+for(let i = 0; i < arrayMembriTeam.length; i++){
+
+    let membroIesimo = arrayMembriTeam[i];
+
+    let nomeECognomeMembroIesimo = membroIesimo.nomeCognome;
+
+    let roleMembroIesimo = membroIesimo.role;
+    
+    let imgMembroIesimo = membroIesimo.image;
+
+    console.log("Nome e Cognome: " + nomeECognomeMembroIesimo, "Ruolo: " + roleMembroIesimo, "Img: " + imgMembroIesimo);
+}
+
